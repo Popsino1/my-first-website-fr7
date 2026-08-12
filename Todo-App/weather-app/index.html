@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Francis | Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <!-- Header -->
+        <header class="weather-header">
+
+            <h1>🌤️ Weather App</h1>
+
+            <p>
+                Check the current weather in any city.
+            </p>
+
+        </header>
+
+
+        <!-- Search Section -->
+        <main>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Loading Message -->
+            <p id="loading" class="loading">
+                Loading...
+            </p>
+
+
+            <!-- Error Message -->
+            <p id="errorMessage" class="error-message">
+            </p>
+
+
+            <!-- Weather Result -->
+            <section
+                id="weatherResult"
+                class="weather-result"
+            >
+
+                <div class="weather-icon">
+                    🌤️
+                </div>
+
+                <h2 id="cityName">
+                    Search for a city
+                </h2>
+
+                <p id="weatherDescription">
+                    Enter a city above to see its weather.
+                </p>
+
+
+                <div class="temperature">
+
+                    <span id="temperature">
+                        --°C
+                    </span>
+
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="weather-card">
+
+                        <h3>🌡️ Feels Like</h3>
+
+                        <p id="feelsLike">
+                            --°C
+                        </p>
+
+                    </div>
+
+
+                    <div class="weather-card">
+
+                        <h3>💧 Humidity</h3>
+
+                        <p id="humidity">
+                            --%
+                        </p>
+
+                    </div>
+
+
+                    <div class="weather-card">
+
+                        <h3>💨 Wind Speed</h3>
+
+                        <p id="windSpeed">
+                            -- km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Built by Francis using HTML, CSS and JavaScript.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

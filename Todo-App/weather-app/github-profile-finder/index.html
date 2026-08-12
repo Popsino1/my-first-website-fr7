@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub Profile Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <h1>🐙 GitHub Profile Finder</h1>
+
+            <p>
+                Search for any GitHub user and view their profile.
+            </p>
+
+        </header>
+
+
+        <!-- Search -->
+
+        <main>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="usernameInput"
+                    placeholder="Enter GitHub username"
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Loading -->
+
+            <p id="loading">
+                Searching...
+            </p>
+
+
+            <!-- Error -->
+
+            <p id="errorMessage"></p>
+
+
+            <!-- Profile -->
+
+            <section
+                id="profile"
+                class="profile-card"
+            >
+
+                <img
+                    id="avatar"
+                    src=""
+                    alt="GitHub profile picture"
+                >
+
+
+                <h2 id="name">
+                    GitHub User
+                </h2>
+
+
+                <p id="username">
+                    @username
+                </p>
+
+
+                <p id="bio">
+                    Search for a GitHub user to see their profile.
+                </p>
+
+
+                <!-- Statistics -->
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <h3>
+                            Repositories
+                        </h3>
+
+                        <p id="repos">
+                            0
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <h3>
+                            Followers
+                        </h3>
+
+                        <p id="followers">
+                            0
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <h3>
+                            Following
+                        </h3>
+
+                        <p id="following">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GitHub Profile Link -->
+
+                <a
+                    id="profileLink"
+                    href="#"
+                    target="_blank"
+                    class="profile-button"
+                >
+                    View GitHub Profile
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                Built by Francis using HTML, CSS and JavaScript.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

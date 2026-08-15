@@ -354,3 +354,52 @@ nav{
     }
 
 }
+
+/* ================================
+   HERO SECTION POLISH
+   ================================ */
+
+.hero {
+    padding: 60px 20px;
+}
+
+#profilePic {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+#profilePic:hover {
+    transform: scale(1.05);
+}
+
+.main-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.main-title span {
+    font-weight: 700;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+#clock {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}

@@ -332,9 +332,11 @@ nav{
     }
 
     .project-card {
-        width: 100%;
-        box-sizing: border-box;
-    }
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 18px;
+    border-radius: 18px;
+}
 
     .project-card img {
         max-width: 100%;

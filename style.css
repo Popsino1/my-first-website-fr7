@@ -403,3 +403,32 @@ nav{
     gap: 12px;
     flex-wrap: wrap;
 }
+
+/* ================================
+   NAVIGATION POLISH
+   ================================ */
+
+nav {
+    padding: 18px 30px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}

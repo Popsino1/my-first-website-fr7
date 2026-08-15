@@ -490,3 +490,24 @@ nav {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
+/* ================================
+   CONTACT SECTION POLISH
+   ================================ */
+
+#contact {
+    text-align: center;
+    padding: 50px 25px;
+    margin-top: 30px;
+    border-radius: 18px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+#contact .contact-button {
+    display: inline-block;
+    margin: 6px;
+}

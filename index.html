@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Francis | Software Engineer Portfolio</title>
+    <title>Francis Unim | Software Engineer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,69 +13,79 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <header class="navbar">
 
-        <h2 class="logo">Francis</h2>
+        <a href="#home" class="logo">Francis<span>.</span></a>
 
-        <div class="nav-links">
+        <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-        </div>
+        </nav>
 
-    </nav>
+        <button id="themeBtn" class="theme-btn">
+            🌙
+        </button>
+
+    </header>
 
 
-    <!-- Main Content -->
-    <div class="container">
-
+    <main>
 
         <!-- Hero Section -->
-        <section class="hero" id="home">
+        <section id="home" class="hero">
 
-            <img
-                id="profilePic"
-                src="profile.png"
-                alt="Francis"
-            >
+            <div class="hero-content">
 
-            <h1 id="mainTitle" class="main-title">
-                Hi, I'm <span>Francis</span> 👋
-            </h1>
+                <p class="hero-tag">SOFTWARE ENGINEER IN TRAINING</p>
 
-            <p id="heroText" class="hero-text">
-                Aspiring Software Engineer passionate about creating
-                modern, responsive, and user-friendly web applications
-                using HTML, CSS, JavaScript, and Git.
-            </p>
+                <h1>
+                    Building ideas into
+                    <span>digital experiences.</span>
+                </h1>
 
-            <h2 id="clock">00:00:00</h2>
+                <p class="hero-description">
+                    I'm Francis Unim, an aspiring software engineer
+                    passionate about building modern, responsive,
+                    and user-friendly web applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a
+                        href="https://github.com/Popsino1"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
 
 
-            <!-- Hero Buttons -->
-            <div class="hero-buttons">
+            <div class="hero-image">
 
-                <button
-                    id="contactBtn"
-                    class="contact-button"
+                <div class="image-glow"></div>
+
+                <img
+                    src="profile.png"
+                    alt="Francis Unim"
                 >
-                    Contact Me
-                </button>
-
-                <a
-                    href="#projects"
-                    class="contact-button"
-                >
-                    View My Projects
-                </a>
-
-                <button
-                    id="themeBtn"
-                    class="contact-button"
-                >
-                    🌙 Dark Mode
-                </button>
 
             </div>
 
@@ -83,49 +93,119 @@
 
 
         <!-- About Section -->
-        <section id="about">
+        <section id="about" class="section">
 
-            <h2>About Me</h2>
+            <div class="section-heading">
 
-            <p>
-                I am passionate about technology and I want to become
-                a successful software engineer. I enjoy learning how
-                websites and applications work and building projects
-                that solve real problems.
-            </p>
+                <p class="section-label">ABOUT ME</p>
+
+                <h2>
+                    Turning curiosity into
+                    <span>real projects.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm passionate about technology and software
+                        development. I enjoy learning how digital
+                        products work and turning ideas into functional
+                        applications.
+                    </p>
+
+                    <p>
+                        My current focus is developing my skills in
+                        frontend development, programming, Git,
+                        APIs, and software engineering.
+                    </p>
+
+                    <p>
+                        Every project I build is another opportunity
+                        to learn, improve, and become a better engineer.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="about-card-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        My Goal
+                    </h3>
+
+                    <p>
+                        Become a highly skilled software engineer
+                        capable of building useful products that
+                        solve real-world problems.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
 
         <!-- Skills Section -->
-        <section id="skills">
+        <section id="skills" class="section">
 
-            <h2>My Skills</h2>
+            <div class="section-heading">
 
-            <div class="skills">
+                <p class="section-label">MY SKILLS</p>
 
-                <div class="skill">
-                    🌐 HTML
+                <h2>
+                    Tools I use to
+                    <span>build.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span>🌐</span>
+                    <h3>HTML</h3>
+                    <p>Building structured web pages.</p>
                 </div>
 
-                <div class="skill">
-                    🎨 CSS
+                <div class="skill-card">
+                    <span>🎨</span>
+                    <h3>CSS</h3>
+                    <p>Creating responsive interfaces.</p>
                 </div>
 
-                <div class="skill">
-                    ⚡ JavaScript
+                <div class="skill-card">
+                    <span>⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction and functionality.</p>
                 </div>
 
-                <div class="skill">
-                    🐍 Python
+                <div class="skill-card">
+                    <span>🐍</span>
+                    <h3>Python</h3>
+                    <p>Learning programming and automation.</p>
                 </div>
 
-                <div class="skill">
-                    🔧 Git
+                <div class="skill-card">
+                    <span>🔧</span>
+                    <h3>Git</h3>
+                    <p>Managing and tracking code.</p>
                 </div>
 
-                <div class="skill">
-                    📱 Responsive Design
+                <div class="skill-card">
+                    <span>📱</span>
+                    <h3>Responsive Design</h3>
+                    <p>Building for different screen sizes.</p>
                 </div>
 
             </div>
@@ -134,284 +214,349 @@
 
 
         <!-- Projects Section -->
-        <section id="projects">
+        <section id="projects" class="section">
 
-            <h2>My Projects</h2>
+            <div class="section-heading">
 
-            <div class="projects">
+                <p class="section-label">FEATURED PROJECTS</p>
 
+                <h2>
+                    Things I've
+                    <span>built.</span>
+                </h2>
 
-                <!-- Portfolio Project -->
-                <div class="project-card">
-
-                    <img
-                        src="images/portfolio.png"
-                        alt="Portfolio Website"
-                    >
-
-                    <h3>
-                        🌐 Portfolio Website
-                    </h3>
-
-                    <p>
-                        My personal developer portfolio built with
-                        HTML, CSS, and JavaScript.
-                    </p>
-
-                    <a
-                        href="index.html"
-                        class="contact-button"
-                    >
-                        Open Project
-                    </a>
-
-                    <a
-                        href="https://github.com/Popsino1"
-                        target="_blank"
-                        class="contact-button"
-                    >
-                        Source Code
-                    </a>
-
-                </div>
+            </div>
 
 
-                <!-- Calculator Project -->
-                <div class="project-card">
-
-                    <img
-                        src="images/calculator.png"
-                        alt="Calculator Project"
-                    >
-
-                    <h3>
-                        🧮 Calculator
-                    </h3>
-
-                    <p>
-                        A fully functional calculator built with
-                        HTML, CSS, and JavaScript.
-                    </p>
-
-                    <a
-                        href="calculator/index.html"
-                        target="_blank"
-                        class="contact-button"
-                    >
-                        Open Project
-                    </a>
-
-                    <a href="https://github.com/Popsino1/calculator"
-   target="_blank"
-   class="contact-button">
-    Source Code
-</a>
-
-                </div>
+            <div class="projects-grid">
 
 
-                <!-- To-Do List Project -->
-                <div class="project-card">
+                <!-- Calculator -->
+                <article class="project-card">
 
-                    <img
-                        src="images/todo.png"
-                        alt="To-Do List App"
-                    >
+                    <div class="project-image">
 
-                    <h3>
-                        📝 To-Do List
-                    </h3>
+                        <img
+                            src="images/calculator.png"
+                            alt="Calculator Project"
+                        >
 
-                    <p>
-                        A task management application built with
-                        HTML, CSS, and JavaScript.
-                    </p>
+                    </div>
 
-                    <a
-                        href="Todo-App/index.html"
-                        target="_blank"
-                        class="contact-button"
-                    >
-                        Open Project
-                    </a>
-        
-                    <a
-    href="https://github.com/Popsino1/todo-app"
-    target="_blank"
-    class="contact-button"
->
-    Source Code
-</a>
-                <div class="project-card">
+                    <div class="project-content">
 
-    <img src="images/weather.png" alt="Weather App">
+                        <p class="project-type">
+                            WEB APPLICATION
+                        </p>
 
-    <h3>🌦️ Weather App</h3>
+                        <h3>
+                            🧮 Calculator
+                        </h3>
 
-    <p>
-        A weather application built with HTML, CSS, and JavaScript.
-    </p>
+                        <p>
+                            A functional calculator built with
+                            HTML, CSS, and JavaScript.
+                        </p>
 
-    <a href="weather-app/index.html"
-       target="_blank"
-       class="contact-button">
-        Open Project
-    </a>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
 
-    <a href="https://popsino1.github.io/weather-app/"
-   target="_blank"
-   class="contact-button">
-    Live Demo
-</a>
+                        <div class="project-links">
 
-    <a href="https://github.com/Popsino1/weather-app"
-       target="_blank"
-       class="contact-button">
-        Source Code
-    </a>
+                            <a
+                                href="calculator/index.html"
+                                target="_blank"
+                            >
+                                Live Demo ↗
+                            </a>
 
-</div>
+                            <a
+                                href="https://github.com/Popsino1/calculator"
+                                target="_blank"
+                            >
+                                GitHub ↗
+                            </a>
 
-<img src="images/weather.png" alt="Weather App">
+                        </div>
 
-<h3>🌦️ Weather App</h3>
+                    </div>
 
-<p>
-    A weather application built with HTML, CSS, and JavaScript.
-</p>
+                </article>
 
 
-<a href="https://popsino1.github.io/weather-app/"
-   target="_blank"
-   class="contact-button">
-    Live Demo
-</a>
+                <!-- To-Do App -->
+                <article class="project-card">
 
-<a href="https://github.com/Popsino1/weather-app"
-   target="_blank"
-   class="contact-button">
-    Source Code
-</a>
+                    <div class="project-image">
 
-</div>  <!-- END OF WEATHER APP CARD -->
+                        <img
+                            src="images/todo.png"
+                            alt="To-Do List App"
+                        >
 
+                    </div>
 
-<!-- PUT GITHUB PROFILE FINDER BELOW THIS -->
+                    <div class="project-content">
 
-<div class="project-card">
+                        <p class="project-type">
+                            WEB APPLICATION
+                        </p>
 
-    <img src="images/github-profile.png"
-         alt="GitHub Profile Finder">
+                        <h3>
+                            📝 To-Do List
+                        </h3>
 
-    <h3>🐙 GitHub Profile Finder</h3>
+                        <p>
+                            A task management application for
+                            organizing daily tasks.
+                        </p>
 
-    <p>
-        A GitHub profile search application built with HTML, CSS,
-        and JavaScript using the GitHub API.
-    </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
 
+                        <div class="project-links">
 
-    <a href="https://popsino1.github.io/github-profile-finder/"
-       target="_blank"
-       class="contact-button">
-        Live Demo
-    </a>
+                            <a
+                                href="Todo-App/index.html"
+                                target="_blank"
+                            >
+                                Live Demo ↗
+                            </a>
 
-    <a href="https://github.com/Popsino1/github-profile-finder"
-       target="_blank"
-       class="contact-button">
-        Source Code
-    </a>
+                            <a
+                                href="https://github.com/Popsino1/todo-app"
+                                target="_blank"
+                            >
+                                GitHub ↗
+                            </a>
 
-</div>
+                        </div>
 
-                <!-- Login Page -->
-                <div class="project-card">
+                    </div>
 
-                    <h3>
-                        🔐 Login Page
-                    </h3>
-
-                    <p>
-                        A responsive login page built with
-                        HTML and CSS.
-                    </p>
-
-                </div>
+                </article>
 
 
-                <!-- Blog Website -->
-                <div class="project-card">
+                <!-- Weather App -->
+                <article class="project-card">
 
-                    <h3>
-                        📝 Blog Website
-                    </h3>
+                    <div class="project-image">
 
-                    <p>
-                        A simple blog homepage with a modern layout.
-                    </p>
+                        <img
+                            src="images/weather.png"
+                            alt="Weather App"
+                        >
 
-                </div>
+                    </div>
 
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            API PROJECT
+                        </p>
+
+                        <h3>
+                            🌦️ Weather App
+                        </h3>
+
+                        <p>
+                            A weather application built with
+                            JavaScript and a weather API.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="Todo-App/weather-app/index.html"
+                                target="_blank"
+                            >
+                                Live Demo ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/Popsino1/weather-app"
+                                target="_blank"
+                            >
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GitHub Profile Finder -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/github-profile.png"
+                            alt="GitHub Profile Finder"
+                        >
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            API PROJECT
+                        </p>
+
+                        <h3>
+                            🐙 GitHub Profile Finder
+                        </h3>
+
+                        <p>
+                            A GitHub profile search application
+                            using the GitHub API.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>GitHub API</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="https://popsino1.github.io/github-profile-finder/"
+                                target="_blank"
+                            >
+                                Live Demo ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/Popsino1/github-profile-finder"
+                                target="_blank"
+                            >
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- Dream Section -->
-        <section class="card">
+        <!-- Journey Section -->
+        <section class="section journey">
 
-            <h3>
-                My Dream
-            </h3>
+            <div class="section-heading">
 
-            <p>
-                I want to become a successful software engineer
-                and build amazing applications that can make
-                people's lives easier.
-            </p>
+                <p class="section-label">MY JOURNEY</p>
+
+                <h2>
+                    Always
+                    <span>learning.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="journey-card">
+
+                <div class="journey-icon">
+                    🚀
+                </div>
+
+                <div>
+
+                    <h3>
+                        Becoming a Software Engineer
+                    </h3>
+
+                    <p>
+                        I'm continuously improving my programming
+                        skills, building projects, learning new
+                        technologies, and working toward becoming
+                        a professional software engineer.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" class="contact-section">
 
-            <h2>Contact</h2>
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
 
-            <a
-                href="mailto:fransunim@gmail.com"
-                class="contact-button"
-            >
-                Contact Me
-            </a>
+            <h2>
+                Let's build something
+                <span>great.</span>
+            </h2>
 
-            <a
-                href="https://github.com/Popsino1"
-                target="_blank"
-                class="contact-button"
-            >
-                View My GitHub
-            </a>
+            <p>
+                Have an idea, opportunity, or project you'd like
+                to discuss? I'd love to hear from you.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="mailto:fransunim@gmail.com"
+                    class="btn btn-primary"
+                >
+                    Email Me
+                </a>
+
+                <a
+                    href="https://github.com/Popsino1"
+                    target="_blank"
+                    class="btn btn-secondary"
+                >
+                    GitHub ↗
+                </a>
+
+            </div>
 
         </section>
 
-
-    </div>
+    </main>
 
 
     <!-- Footer -->
     <footer>
 
         <p>
-            © 2026 Francis. All rights reserved.
+            © 2026 Francis Unim. All rights reserved.
         </p>
+
+        <a href="#home">
+            Back to top ↑
+        </a>
 
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>

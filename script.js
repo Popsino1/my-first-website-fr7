@@ -1,48 +1,80 @@
-let button = document.getElementById("contactBtn");
-let title = document.getElementById("mainTitle");
-let heroText = document.getElementById("heroText");
+ /* =========================================
+   FRANCIS UNIM — PORTFOLIO JAVASCRIPT
+   ========================================= */
 
-button.addEventListener("click", function () {
-    title.textContent = "Welcome to My Portfolio!";
-    title.style.color = "crimson";
 
-    heroText.textContent = "Thank you for visiting. Explore my projects and follow my journey as I become a software engineer.";
-    heroText.style.color = "darkblue";
-});
+/* ---------- DARK / LIGHT MODE ---------- */
 
-let themeBtn = document.getElementById("themeBtn");
+const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-});
+themeBtn.addEventListener("click", () => {
 
-let clock = document.getElementById("clock");
+    document.body.classList.toggle("light-mode");
 
-function updateClock() {
-    let now = new Date();
-
-    clock.textContent = now.toLocaleTimeString();
-}
-
-updateClock();
-
-setInterval(updateClock, 1000);
-
-let text = "An aspiring Software Engineer passionate about building beautiful and useful websites.";
-
-let index = 0;
-
-function typeWriter() {
-    if (index < text.length) {
-        heroText.textContent += text.charAt(index);
-        index++;
+    if (document.body.classList.contains("light-mode")) {
+        themeBtn.textContent = "☀️";
+    } else {
+        themeBtn.textContent = "🌙";
     }
-}
 
-setInterval(typeWriter, 50);
-
-let profilePic = document.getElementById("profilePic");
-
-profilePic.addEventListener("click", function () {
-    profilePic.classList.toggle("clicked");
 });
+
+
+/* ---------- NAVIGATION ---------- */
+
+const navLinks = document.querySelectorAll(".nav-links a");
+
+navLinks.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        link.classList.add("active");
+
+    });
+
+});
+
+
+/* ---------- SCROLL REVEAL ---------- */
+
+const sections = document.querySelectorAll(".section, .hero, .contact-section");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
+
+
+/* ---------- CURRENT YEAR ---------- */
+
+const footerText = document.querySelector("footer p");
+
+if (footerText) {
+
+    const currentYear = new Date().getFullYear();
+
+    footerText.textContent =
+        `© ${currentYear} Francis Unim. All rights reserved.`;
+
+}

@@ -1,9 +1,6 @@
  /* =========================================
-   FRANCIS UNIM — PORTFOLIO JAVASCRIPT
-   ========================================= */
-
-
-/* ---------- DARK / LIGHT MODE ---------- */
+   THEME TOGGLE
+========================================= */
 
 const themeBtn = document.getElementById("themeBtn");
 
@@ -12,69 +9,66 @@ themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
 
     if (document.body.classList.contains("light-mode")) {
+
         themeBtn.textContent = "☀️";
+        themeBtn.setAttribute("aria-label", "Switch to dark mode");
+
     } else {
+
         themeBtn.textContent = "🌙";
+        themeBtn.setAttribute("aria-label", "Switch to light mode");
+
     }
 
 });
 
 
-/* ---------- NAVIGATION ---------- */
+/* =========================================
+   MOBILE MENU
+========================================= */
 
-const navLinks = document.querySelectorAll(".nav-links a");
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-navLinks.forEach((link) => {
+if (menuBtn && navLinks) {
 
-    link.addEventListener("click", () => {
+    menuBtn.addEventListener("click", () => {
 
-        navLinks.forEach((item) => {
-            item.classList.remove("active");
-        });
+        navLinks.classList.toggle("active");
 
-        link.classList.add("active");
+        const isOpen = navLinks.classList.contains("active");
+
+        if (isOpen) {
+
+            menuBtn.textContent = "✕";
+            menuBtn.setAttribute("aria-label", "Close navigation");
+            menuBtn.setAttribute("aria-expanded", "true");
+
+        } else {
+
+            menuBtn.textContent = "☰";
+            menuBtn.setAttribute("aria-label", "Open navigation");
+            menuBtn.setAttribute("aria-expanded", "false");
+
+        }
 
     });
 
-});
 
+    /* Close mobile menu when a link is clicked */
 
-/* ---------- SCROLL REVEAL ---------- */
+    navLinks.querySelectorAll("a").forEach((link) => {
 
-const sections = document.querySelectorAll(".section, .hero, .contact-section");
+        link.addEventListener("click", () => {
 
-const observer = new IntersectionObserver(
-    (entries) => {
+            navLinks.classList.remove("active");
 
-        entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
+            menuBtn.textContent = "☰";
+            menuBtn.setAttribute("aria-label", "Open navigation");
+            menuBtn.setAttribute("aria-expanded", "false");
 
         });
 
-    },
-    {
-        threshold: 0.15
-    }
-);
-
-
-sections.forEach((section) => {
-    observer.observe(section);
-});
-
-
-/* ---------- CURRENT YEAR ---------- */
-
-const footerText = document.querySelector("footer p");
-
-if (footerText) {
-
-    const currentYear = new Date().getFullYear();
-
-    footerText.textContent =
-        `© ${currentYear} Francis Unim. All rights reserved.`;
+    });
 
 }

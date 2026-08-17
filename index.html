@@ -1,9 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Francis Unim - Software Engineer portfolio showcasing web development projects, skills, and experience."
+    >
 
     <title>Francis Unim | Software Engineer</title>
 
@@ -12,20 +17,48 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
     <header class="navbar">
 
-        <a href="#home" class="logo">Francis<span>.</span></a>
+        <a href="#home" class="logo">
+            Francis<span>.</span>
+        </a>
 
-        <nav class="nav-links">
+        <!-- Mobile Menu Button -->
+        <button
+            id="menuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <nav
+            class="nav-links"
+            id="navLinks"
+            aria-label="Main navigation"
+        >
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#learning">Learning</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <button id="themeBtn" class="theme-btn">
+        <!-- Theme Button -->
+        <button
+            id="themeBtn"
+            class="theme-btn"
+            type="button"
+            aria-label="Toggle color theme"
+        >
             🌙
         </button>
 
@@ -34,31 +67,42 @@
 
     <main>
 
-        <!-- Hero Section -->
+        <!-- ================================
+             HERO
+        ================================= -->
+
         <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <p class="hero-tag">SOFTWARE ENGINEER IN TRAINING</p>
+                <p class="hero-tag">
+    🟢 BUILDING. LEARNING. LEVELING UP.
+</p>
 
                 <h1>
-                    Building ideas into
-                    <span>digital experiences.</span>
-                </h1>
+    Code with purpose.
+    <span>Built from the ground up.</span>
+</h1>
 
                 <p class="hero-description">
-                    I'm Francis Unim, an aspiring software engineer
-                    passionate about building modern, responsive,
-                    and user-friendly web applications.
-                </p>
+    I'm Francis Unim, an aspiring software engineer from Nigeria
+    building my skills one project at a time. I write code,
+    break things, fix them, and keep leveling up.
+</p>
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn btn-primary">
+                    <a
+                        href="#projects"
+                        class="btn btn-primary"
+                    >
                         View My Work
                     </a>
 
-                    <a href="#contact" class="btn btn-secondary">
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                    >
                         Contact Me
                     </a>
 
@@ -69,8 +113,9 @@
                     <a
                         href="https://github.com/Popsino1"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        GitHub
+                        GitHub ↗
                     </a>
 
                 </div>
@@ -92,75 +137,102 @@
         </section>
 
 
-        <!-- About Section -->
-        <section id="about" class="section">
+        <!-- ================================
+     ABOUT
+================================= -->
 
-            <div class="section-heading">
+<section id="about" class="section">
 
-                <p class="section-label">ABOUT ME</p>
+    <div class="section-heading">
 
-                <h2>
-                    Turning curiosity into
-                    <span>real projects.</span>
-                </h2>
+        <p class="section-label">
+            ABOUT ME
+        </p>
+
+        <h2>
+            More than just
+            <span>writing code.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I'm Francis Unim, an aspiring software engineer
+                passionate about technology, problem-solving,
+                and building things that are useful.
+            </p>
+
+            <p>
+                My journey into software engineering started with
+                curiosity. I wanted to understand how websites,
+                applications, and digital products actually work —
+                so I started learning and building them myself.
+            </p>
+
+            <p>
+                I'm currently developing my skills in HTML, CSS,
+                JavaScript, Python, APIs, Git, GitHub, and core
+                software engineering concepts.
+            </p>
+
+            <p>
+                I'm still learning, still experimenting, and still
+                making mistakes — but every project gives me another
+                opportunity to improve.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-card-icon">
+                🚀
+            </div>
+
+            <h3>
+                What I'm Working Toward
+            </h3>
+
+            <p>
+                Becoming a well-rounded software engineer who can
+                turn ideas into reliable, useful, and scalable
+                digital products.
+            </p>
+
+            <div class="about-goals">
+
+                <span>💻 Build</span>
+                <span>🧠 Learn</span>
+                <span>⚡ Improve</span>
 
             </div>
 
+        </div>
 
-            <div class="about-grid">
+    </div>
 
-                <div class="about-text">
-
-                    <p>
-                        I'm passionate about technology and software
-                        development. I enjoy learning how digital
-                        products work and turning ideas into functional
-                        applications.
-                    </p>
-
-                    <p>
-                        My current focus is developing my skills in
-                        frontend development, programming, Git,
-                        APIs, and software engineering.
-                    </p>
-
-                    <p>
-                        Every project I build is another opportunity
-                        to learn, improve, and become a better engineer.
-                    </p>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <div class="about-card-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        My Goal
-                    </h3>
-
-                    <p>
-                        Become a highly skilled software engineer
-                        capable of building useful products that
-                        solve real-world problems.
-                    </p>
-
-                </div>
-
-            </div>
+</section>
 
         </section>
 
 
-        <!-- Skills Section -->
+        <!-- ================================
+             SKILLS
+        ================================= -->
+
         <section id="skills" class="section">
 
             <div class="section-heading">
 
-                <p class="section-label">MY SKILLS</p>
+                <p class="section-label">
+                    MY SKILLS
+                </p>
 
                 <h2>
                     Tools I use to
@@ -213,12 +285,187 @@
         </section>
 
 
-        <!-- Projects Section -->
+        <!-- ================================
+             CURRENTLY LEARNING
+        ================================= -->
+
+        <section id="learning" class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    CURRENTLY LEARNING
+                </p>
+
+                <h2>
+                    Growing my
+                    <span>toolkit.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Building interactive web applications
+                        and improving my understanding of
+                        modern JavaScript.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        🐍
+                    </div>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Developing my programming fundamentals
+                        and learning how Python can solve
+                        real problems.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        🔌
+                    </div>
+
+                    <h3>
+                        APIs
+                    </h3>
+
+                    <p>
+                        Learning how applications communicate
+                        with external services and work with
+                        API data.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        🐙
+                    </div>
+
+                    <h3>
+                        Git & GitHub
+                    </h3>
+
+                    <p>
+                        Improving my version-control workflow
+                        and learning how to manage real
+                        software projects.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        🧠
+                    </div>
+
+                    <h3>
+                        Data Structures
+                    </h3>
+
+                    <p>
+                        Building a stronger foundation in
+                        algorithms, problem solving, and
+                        efficient programming.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="learning-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Software Engineering
+                    </h3>
+
+                    <p>
+                        Learning professional development
+                        practices, architecture, testing,
+                        and scalable applications.
+                    </p>
+
+                    <div class="learning-status">
+                        <span></span>
+                        Learning
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             PROJECTS
+        ================================= -->
+
         <section id="projects" class="section">
 
             <div class="section-heading">
 
-                <p class="section-label">FEATURED PROJECTS</p>
+                <p class="section-label">
+                    FEATURED PROJECTS
+                </p>
 
                 <h2>
                     Things I've
@@ -232,13 +479,14 @@
 
 
                 <!-- Calculator -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
                             src="images/calculator.png"
-                            alt="Calculator Project"
+                            alt="Calculator project screenshot"
                         >
 
                     </div>
@@ -259,9 +507,11 @@
                         </p>
 
                         <div class="project-tech">
+
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
+
                         </div>
 
                         <div class="project-links">
@@ -269,6 +519,7 @@
                             <a
                                 href="calculator/index.html"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Live Demo ↗
                             </a>
@@ -276,6 +527,7 @@
                             <a
                                 href="https://github.com/Popsino1/calculator"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 GitHub ↗
                             </a>
@@ -287,14 +539,15 @@
                 </article>
 
 
-                <!-- To-Do App -->
+                <!-- To-Do List -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
                             src="images/todo.png"
-                            alt="To-Do List App"
+                            alt="To-Do List project screenshot"
                         >
 
                     </div>
@@ -315,9 +568,11 @@
                         </p>
 
                         <div class="project-tech">
+
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
+
                         </div>
 
                         <div class="project-links">
@@ -325,6 +580,7 @@
                             <a
                                 href="Todo-App/index.html"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Live Demo ↗
                             </a>
@@ -332,6 +588,7 @@
                             <a
                                 href="https://github.com/Popsino1/todo-app"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 GitHub ↗
                             </a>
@@ -344,13 +601,14 @@
 
 
                 <!-- Weather App -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
                             src="images/weather.png"
-                            alt="Weather App"
+                            alt="Weather App screenshot"
                         >
 
                     </div>
@@ -371,24 +629,36 @@
                         </p>
 
                         <div class="project-tech">
+
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
                             <span>API</span>
+
                         </div>
 
                         <div class="project-links">
 
                             <a
-                                href="Todo-App/weather-app/index.html"
+                                href="weather-app/index.html"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Live Demo ↗
                             </a>
 
                             <a
+                                href="https://popsino1.github.io/weather-app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Live Site ↗
+                            </a>
+
+                            <a
                                 href="https://github.com/Popsino1/weather-app"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 GitHub ↗
                             </a>
@@ -401,13 +671,14 @@
 
 
                 <!-- GitHub Profile Finder -->
+
                 <article class="project-card">
 
                     <div class="project-image">
 
                         <img
                             src="images/github-profile.png"
-                            alt="GitHub Profile Finder"
+                            alt="GitHub Profile Finder screenshot"
                         >
 
                     </div>
@@ -428,10 +699,12 @@
                         </p>
 
                         <div class="project-tech">
+
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
                             <span>GitHub API</span>
+
                         </div>
 
                         <div class="project-links">
@@ -439,6 +712,7 @@
                             <a
                                 href="https://popsino1.github.io/github-profile-finder/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Live Demo ↗
                             </a>
@@ -446,9 +720,72 @@
                             <a
                                 href="https://github.com/Popsino1/github-profile-finder"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 GitHub ↗
                             </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Login Page -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            WEB DESIGN
+                        </p>
+
+                        <h3>
+                            🔐 Login Page
+                        </h3>
+
+                        <p>
+                            A responsive login page built with
+                            HTML and CSS.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog Website -->
+
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            WEB DESIGN
+                        </p>
+
+                        <h3>
+                            📝 Blog Website
+                        </h3>
+
+                        <p>
+                            A simple blog homepage with a
+                            modern responsive layout.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
 
                         </div>
 
@@ -461,12 +798,17 @@
         </section>
 
 
-        <!-- Journey Section -->
+        <!-- ================================
+             JOURNEY
+        ================================= -->
+
         <section class="section journey">
 
             <div class="section-heading">
 
-                <p class="section-label">MY JOURNEY</p>
+                <p class="section-label">
+                    MY JOURNEY
+                </p>
 
                 <h2>
                     Always
@@ -502,8 +844,14 @@
         </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <!-- ================================
+             CONTACT
+        ================================= -->
+
+        <section
+            id="contact"
+            class="contact-section"
+        >
 
             <p class="section-label">
                 GET IN TOUCH
@@ -531,6 +879,7 @@
                 <a
                     href="https://github.com/Popsino1"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-secondary"
                 >
                     GitHub ↗
@@ -543,7 +892,10 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
     <footer>
 
         <p>
@@ -556,6 +908,10 @@
 
     </footer>
 
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
 
     <script src="script.js"></script>
 

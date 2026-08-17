@@ -776,3 +776,627 @@ body.light-mode footer {
 body.light-mode footer a {
     color: #4b5563;
 }
+
+/* =========================================
+   MOBILE HAMBURGER MENU - FINAL
+   ========================================= */
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        padding: 18px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: auto;
+        text-align: left;
+    }
+
+    .menu-btn {
+        display: block;
+        position: relative;
+        z-index: 1002;
+    }
+
+    .theme-btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 25px 20px;
+        gap: 20px;
+
+        background: #080b14;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        z-index: 1001;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        font-size: 1rem;
+    }
+
+    body.light-mode .nav-links {
+        background: #f5f7fb;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+
+    body.light-mode .menu-btn {
+        color: #111827;
+    }
+}
+
+/* =========================================
+   CURRENTLY LEARNING
+========================================= */
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.learning-card {
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(108, 99, 255, 0.45);
+}
+
+.learning-icon {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.learning-card h3 {
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+.learning-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.learning-status span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    display: inline-block;
+}
+
+/* Light Mode */
+
+body.light-mode .learning-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .learning-card p {
+    color: #5b6475;
+}
+
+body.light-mode .learning-status {
+    color: #5b6475;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   HERO — DARK / SOUTH LONDON INSPIRED
+========================================= */
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(108, 99, 255, 0.25);
+    border-radius: 999px;
+
+    background: rgba(108, 99, 255, 0.08);
+    color: #b8b3ff;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    display: block;
+    margin-top: 8px;
+}
+
+.hero-description {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 32px;
+}
+
+.hero-buttons .btn {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-buttons .btn-primary:hover {
+    box-shadow: 0 12px 35px rgba(108, 99, 255, 0.25);
+}
+
+.social-links {
+    margin-top: 28px;
+}
+
+.social-links a {
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+.social-links a:hover {
+    letter-spacing: 0.5px;
+}
+
+/* Hero image */
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    position: relative;
+    z-index: 2;
+}
+
+.image-glow {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(108, 99, 255, 0.22);
+    filter: blur(70px);
+
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Light mode */
+
+body.light-mode .hero-tag {
+    background: rgba(108, 99, 255, 0.08);
+    border-color: rgba(108, 99, 255, 0.2);
+    color: #5148c7;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-tag {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        line-height: 1.7;
+    }
+
+}
+
+/* =========================================
+   PROJECT CARDS — PROFESSIONAL UPGRADE
+========================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #6c63ff,
+        #8b5cf6,
+        transparent
+    );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(108, 99, 255, 0.35);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Project image */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+
+    background: #111827;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Project content */
+
+.project-content {
+    padding: 28px;
+}
+
+.project-type {
+    margin-bottom: 10px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #8b85ff;
+}
+
+.project-content h3 {
+    margin-bottom: 12px;
+
+    font-size: 1.35rem;
+}
+
+.project-content > p:not(.project-type) {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+/* Technology tags */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.project-tech span {
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    background: rgba(108, 99, 255, 0.09);
+    color: #b8b3ff;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Project links */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #8b85ff;
+    transform: translateX(3px);
+}
+
+/* Light mode */
+
+body.light-mode .project-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .project-card:hover {
+    border-color: rgba(108, 99, 255, 0.35);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .project-image {
+    background: #e5e7eb;
+}
+
+body.light-mode .project-content > p:not(.project-type) {
+    color: #5b6475;
+}
+
+body.light-mode .project-tech span {
+    background: rgba(108, 99, 255, 0.08);
+    color: #5148c7;
+}
+
+body.light-mode .project-links a {
+    color: #111827;
+}
+
+body.light-mode .project-links a:hover {
+    color: #5148c7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+/* =========================================
+   ABOUT SECTION — FINAL TOUCH
+========================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-text {
+    max-width: 720px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #9ca3af;
+    line-height: 1.85;
+}
+
+.about-card {
+    padding: 32px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(108, 99, 255, 0.35);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.about-card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+}
+
+.about-card p {
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+.about-goals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.about-goals span {
+    padding: 7px 11px;
+    border-radius: 999px;
+
+    background: rgba(108, 99, 255, 0.09);
+    color: #b8b3ff;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* Light mode */
+
+body.light-mode .about-text p,
+body.light-mode .about-card p {
+    color: #5b6475;
+}
+
+body.light-mode .about-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .about-card:hover {
+    border-color: rgba(108, 99, 255, 0.3);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .about-goals span {
+    background: rgba(108, 99, 255, 0.08);
+    color: #5148c7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .about-card {
+        padding: 24px;
+    }
+
+}
